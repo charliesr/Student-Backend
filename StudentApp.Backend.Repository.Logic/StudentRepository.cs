@@ -29,8 +29,9 @@ namespace StudentApp.Backend.Repository.Logic
             {
                 context.Students.Add(student);
                 context.SaveChanges();
+                return GetByGuid(student.Guid);
             }
-            return GetByGuid(student.Guid);
+            
         }
 
         public List<Student> GetAll()
@@ -64,7 +65,7 @@ namespace StudentApp.Backend.Repository.Logic
 
             using (var context = this.studentContext)
             {
-                return this.studentContext.Students
+                return context.Students
                 .Find(id);
             }
 
@@ -84,8 +85,9 @@ namespace StudentApp.Backend.Repository.Logic
                 studentToUpdate.DNI = student.DNI;
                 studentToUpdate.Edad = student.Edad;
                 context.SaveChanges();
+                return GetById(student.ID);
             }
-            return GetById(student.ID);
+
         }
         public void Delete(int id)
         {

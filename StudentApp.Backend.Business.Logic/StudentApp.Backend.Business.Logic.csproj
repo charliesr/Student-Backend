@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\StudentApp.Backend.Business.Logic.Contracts\StudentApp.Backend.Business.Logic.Contracts.csproj" />
+    <ProjectReference Include="..\StudentApp.Backend.Repository.Logic.Contracts\StudentApp.Backend.Repository.Logic.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>

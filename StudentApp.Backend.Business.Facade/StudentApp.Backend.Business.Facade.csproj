@@ -16,4 +16,11 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\StudentApp.Backend.Business.Logic.Contracts\StudentApp.Backend.Business.Logic.Contracts.csproj" />
+    <ProjectReference Include="..\StudentApp.Backend.Business.Logic\StudentApp.Backend.Business.Logic.csproj" />
+    <ProjectReference Include="..\StudentApp.Backend.Repository.Logic.Contracts\StudentApp.Backend.Repository.Logic.Contracts.csproj" />
+    <ProjectReference Include="..\StudentApp.Backend.Repository.Logic\StudentApp.Backend.Repository.Logic.csproj" />
+  </ItemGroup>
+
 </Project>

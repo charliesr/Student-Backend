@@ -5,7 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="log4net" Version="2.0.8" />
     <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\StudentApp.Backend.Common.Logic.Contracts\StudentApp.Backend.Common.Logic.Contracts.csproj" />
   </ItemGroup>
 
   <ItemGroup>
@@ -14,12 +19,21 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>CommonLiterals.resx</DependentUpon>
     </Compile>
+    <Compile Update="LoggingLiterals.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>LoggingLiterals.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Update="CommonLiterals.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>CommonLiterals.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="LoggingLiterals.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>LoggingLiterals.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
 

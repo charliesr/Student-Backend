@@ -6,6 +6,7 @@ using log4net.Repository.Hierarchy;
 using StudentApp.Backend.Common.Logic.Contracts;
 using System;
 using System.Collections.Generic;
+using System.Reflection;
 using System.Text;
 
 namespace StudentApp.Backend.Common.Logic
@@ -21,7 +22,7 @@ namespace StudentApp.Backend.Common.Logic
 
         public static void Configure()
         {
-            var hierarchy = (Hierarchy)LogManager.GetRepository(CommonLiterals.LogRepository);
+            var hierarchy = (Hierarchy)LogManager.GetRepository(Assembly.Load("StudentApp.Backend.Common.Logic"));
 
             // Ingresamos la pattern que seguirá el log
             var rollingPatternLayout = new PatternLayout()
