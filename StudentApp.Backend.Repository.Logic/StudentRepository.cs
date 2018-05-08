@@ -29,7 +29,7 @@ namespace StudentApp.Backend.Repository.Logic
             {
                 context.Students.Add(student);
                 context.SaveChanges();
-                return GetByGuid(student.Guid);
+                return student;
             }
             
         }
