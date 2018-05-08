@@ -40,12 +40,7 @@ namespace StudentApp.Backend.Repository.Logic
 
             using (var context = this.studentContext)
             {
-                var result = new List<Student>();
-                foreach (var student in context.Students)
-                {
-                    result.Add(student);
-                }
-                return result;
+                return context.Students.ToList();
             }
         }
 
