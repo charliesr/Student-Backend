@@ -18,5 +18,31 @@ namespace StudentApp.Backend.Common.Logic
         public DateTime FechaHoraRegistro { get; set; }
         public int Edad { get; set; }
         #endregion
+
+        public Student()
+        {
+
+        }
+        public Student(Guid guid, int Id, string dni, string nombre, string apellidos, int edad, DateTime nacimiento, DateTime registro)
+        {
+            this.Guid = guid;
+            this.ID = Id;
+            this.DNI = dni;
+            this.Nombre = nombre;
+            this.Apellidos = apellidos;
+            this.Edad = edad;
+            this.FechaDeNacimiento = nacimiento;
+            this.FechaHoraRegistro = registro;
+        }
+        public Student(Guid guid, string dni, string nombre, string apellidos, int edad, DateTime nacimiento, DateTime registro)
+        {
+            this.Guid = guid;
+            this.DNI = dni;
+            this.Nombre = nombre;
+            this.Apellidos = apellidos;
+            this.Edad = edad;
+            this.FechaDeNacimiento = nacimiento;
+            this.FechaHoraRegistro = registro;
+        }
     }
 }

@@ -1,142 +1,106 @@
-2018-05-07 16:26:35,377 [8] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - We are entering in class StudentApp.Backend.Repository.Logic.StudentRepository
-2018-05-07 16:26:35,547 [8] DEBUG StudentApp.Backend.Business.Logic.BusinessLogic - We are entering in class StudentApp.Backend.Business.Logic.BusinessLogic
-2018-05-07 16:26:35,549 [8] DEBUG StudentApp.Backend.Business.Facade.Controllers.StudentController - We are entering in class StudentApp.Backend.Business.Facade.Controllers.StudentController
-2018-05-07 16:26:35,981 [8] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - Listing all Student
-2018-05-07 16:53:14,077 [11] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - We are entering in class StudentApp.Backend.Repository.Logic.StudentRepository
-2018-05-07 16:53:14,103 [11] DEBUG StudentApp.Backend.Business.Logic.BusinessLogic - We are entering in class StudentApp.Backend.Business.Logic.BusinessLogic
-2018-05-07 16:53:14,103 [11] DEBUG StudentApp.Backend.Business.Facade.Controllers.StudentController - We are entering in class StudentApp.Backend.Business.Facade.Controllers.StudentController
-2018-05-07 16:53:14,154 [11] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - Listing all Student
-2018-05-07 16:56:58,769 [8] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - We are entering in class StudentApp.Backend.Repository.Logic.StudentRepository
-2018-05-07 16:56:58,782 [8] DEBUG StudentApp.Backend.Business.Logic.BusinessLogic - We are entering in class StudentApp.Backend.Business.Logic.BusinessLogic
-2018-05-07 16:56:58,782 [8] DEBUG StudentApp.Backend.Business.Facade.Controllers.StudentController - We are entering in class StudentApp.Backend.Business.Facade.Controllers.StudentController
-2018-05-07 16:56:58,805 [8] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - Listing all Student
-2018-05-07 16:57:00,919 [9] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - We are entering in class StudentApp.Backend.Repository.Logic.StudentRepository
-2018-05-07 16:57:00,920 [9] DEBUG StudentApp.Backend.Business.Logic.BusinessLogic - We are entering in class StudentApp.Backend.Business.Logic.BusinessLogic
-2018-05-07 16:57:00,921 [9] DEBUG StudentApp.Backend.Business.Facade.Controllers.StudentController - We are entering in class StudentApp.Backend.Business.Facade.Controllers.StudentController
-2018-05-07 16:57:00,947 [9] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - Listing all Student
-2018-05-07 16:57:45,265 [9] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - We are entering in class StudentApp.Backend.Repository.Logic.StudentRepository
-2018-05-07 16:57:45,265 [9] DEBUG StudentApp.Backend.Business.Logic.BusinessLogic - We are entering in class StudentApp.Backend.Business.Logic.BusinessLogic
-2018-05-07 16:57:45,265 [9] DEBUG StudentApp.Backend.Business.Facade.Controllers.StudentController - We are entering in class StudentApp.Backend.Business.Facade.Controllers.StudentController
-2018-05-07 16:57:45,309 [9] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - Adding a Student
-2018-05-07 16:57:45,953 [9] ERROR StudentApp.Backend.Business.Logic.BusinessLogic - An exception has been thrownDbUpdateException
-Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Cannot insert the value NULL into column 'Apellidos', table 'VuelingCrud.dbo.Students'; column does not allow nulls. INSERT fails.
-The statement has been terminated.
-   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
-   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
-   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
-   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
-   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
-   at System.Data.SqlClient.SqlDataReader.get_MetaData()
-   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
-   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
-   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
-   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
-   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
-   at System.Data.Common.DbCommand.ExecuteReader()
-   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
-   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
-   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
-   --- End of inner exception stack trace ---
-   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
-   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(Tuple`2 parameters)
+2018-05-09 10:22:31,475 [8] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - We are entering in class StudentApp.Backend.Repository.Logic.StudentRepository
+2018-05-09 10:22:31,505 [8] DEBUG StudentApp.Backend.Business.Logic.BusinessLogic - We are entering in class StudentApp.Backend.Business.Logic.BusinessLogic
+2018-05-09 10:22:31,506 [8] DEBUG StudentApp.Backend.Business.Facade.Controllers.StudentController - We are entering in class StudentApp.Backend.Business.Facade.Controllers.StudentController
+2018-05-09 10:22:31,554 [8] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - Listing all Student
+2018-05-09 10:23:25,755 [8] ERROR StudentApp.Backend.Business.Logic.BusinessLogic - An exception has been thrownSqlException
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server) ---> System.ComponentModel.Win32Exception (0x80004005): No se ha encontrado la ruta de acceso de la red
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
    at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
-   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.Execute[TState,TResult](IExecutionStrategy strategy, TState state, Func`2 operation)
-   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
-   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IReadOnlyList`1 entries)
-   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IReadOnlyList`1 entriesToSave)
-   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
-   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
-   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
-   at StudentApp.Backend.Repository.Logic.StudentRepository.Add(Student student) in C:\Users\carles.sanchez\source\repos\Students-Backend\StudentApp.Backend.Repository.Logic\StudentRepository.cs:line 31
-   at StudentApp.Backend.Business.Logic.BusinessLogic.Add(Student student) in C:\Users\carles.sanchez\source\repos\Students-Backend\StudentApp.Backend.Business.Logic\BusinessLogic.cs:line 28
-2018-05-07 16:58:09,977 [8] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - We are entering in class StudentApp.Backend.Repository.Logic.StudentRepository
-2018-05-07 16:58:09,977 [8] DEBUG StudentApp.Backend.Business.Logic.BusinessLogic - We are entering in class StudentApp.Backend.Business.Logic.BusinessLogic
-2018-05-07 16:58:09,977 [8] DEBUG StudentApp.Backend.Business.Facade.Controllers.StudentController - We are entering in class StudentApp.Backend.Business.Facade.Controllers.StudentController
-2018-05-07 17:00:38,600 [8] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - We are entering in class StudentApp.Backend.Repository.Logic.StudentRepository
-2018-05-07 17:00:38,628 [8] DEBUG StudentApp.Backend.Business.Logic.BusinessLogic - We are entering in class StudentApp.Backend.Business.Logic.BusinessLogic
-2018-05-07 17:00:38,628 [8] DEBUG StudentApp.Backend.Business.Facade.Controllers.StudentController - We are entering in class StudentApp.Backend.Business.Facade.Controllers.StudentController
-2018-05-07 17:00:38,675 [8] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - Listing all Student
-2018-05-07 17:00:41,509 [9] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - We are entering in class StudentApp.Backend.Repository.Logic.StudentRepository
-2018-05-07 17:00:41,509 [9] DEBUG StudentApp.Backend.Business.Logic.BusinessLogic - We are entering in class StudentApp.Backend.Business.Logic.BusinessLogic
-2018-05-07 17:00:41,509 [9] DEBUG StudentApp.Backend.Business.Facade.Controllers.StudentController - We are entering in class StudentApp.Backend.Business.Facade.Controllers.StudentController
-2018-05-07 17:01:33,237 [11] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - We are entering in class StudentApp.Backend.Repository.Logic.StudentRepository
-2018-05-07 17:01:33,255 [11] DEBUG StudentApp.Backend.Business.Logic.BusinessLogic - We are entering in class StudentApp.Backend.Business.Logic.BusinessLogic
-2018-05-07 17:01:33,256 [11] DEBUG StudentApp.Backend.Business.Facade.Controllers.StudentController - We are entering in class StudentApp.Backend.Business.Facade.Controllers.StudentController
-2018-05-07 17:01:33,336 [11] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - Adding a Student
-2018-05-07 17:01:33,804 [11] ERROR StudentApp.Backend.Business.Logic.BusinessLogic - An exception has been thrownObjectDisposedException
-System.ObjectDisposedException: Cannot access a disposed object. A common cause of this error is disposing a context that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling Dispose() on the context, or wrapping the context in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.
-Object name: 'StudentContext'.
-   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()
-   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityType()
-   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityQueryable()
-   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.System.Linq.IQueryable.get_Provider()
-   at System.Linq.Queryable.Where[TSource](IQueryable`1 source, Expression`1 predicate)
-   at StudentApp.Backend.Repository.Logic.StudentRepository.GetByGuid(Guid guid) in C:\Users\carles.sanchez\source\repos\Students-Backend\StudentApp.Backend.Repository.Logic\StudentRepository.cs:line 55
-   at StudentApp.Backend.Repository.Logic.StudentRepository.Add(Student student) in C:\Users\carles.sanchez\source\repos\Students-Backend\StudentApp.Backend.Repository.Logic\StudentRepository.cs:line 33
-   at StudentApp.Backend.Business.Logic.BusinessLogic.Add(Student student) in C:\Users\carles.sanchez\source\repos\Students-Backend\StudentApp.Backend.Business.Logic\BusinessLogic.cs:line 28
-2018-05-07 17:01:52,525 [9] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - We are entering in class StudentApp.Backend.Repository.Logic.StudentRepository
-2018-05-07 17:01:52,525 [9] DEBUG StudentApp.Backend.Business.Logic.BusinessLogic - We are entering in class StudentApp.Backend.Business.Logic.BusinessLogic
-2018-05-07 17:01:52,527 [9] DEBUG StudentApp.Backend.Business.Facade.Controllers.StudentController - We are entering in class StudentApp.Backend.Business.Facade.Controllers.StudentController
-2018-05-07 17:01:52,750 [9] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - Listing all Student
-2018-05-07 17:02:07,401 [9] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - We are entering in class StudentApp.Backend.Repository.Logic.StudentRepository
-2018-05-07 17:02:07,401 [9] DEBUG StudentApp.Backend.Business.Logic.BusinessLogic - We are entering in class StudentApp.Backend.Business.Logic.BusinessLogic
-2018-05-07 17:02:07,401 [9] DEBUG StudentApp.Backend.Business.Facade.Controllers.StudentController - We are entering in class StudentApp.Backend.Business.Facade.Controllers.StudentController
-2018-05-07 17:03:25,702 [9] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - Adding a Student
-2018-05-07 17:03:26,290 [9] ERROR StudentApp.Backend.Business.Logic.BusinessLogic - An exception has been thrownDbUpdateException
-Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Violation of UNIQUE KEY constraint 'UQ__Students__15B69B8F503292C4'. Cannot insert duplicate key in object 'dbo.Students'. The duplicate key value is (f88d9153-3736-4c42-8998-cd6db91cab8d).
-The statement has been terminated.
-   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
-   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
-   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
-   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
-   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
-   at System.Data.SqlClient.SqlDataReader.get_MetaData()
-   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
-   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
-   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
-   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
-   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
-   at System.Data.Common.DbCommand.ExecuteReader()
-   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
-   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
-   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
-   --- End of inner exception stack trace ---
-   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
-   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(Tuple`2 parameters)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.<_TrackEntities>d__17`2.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at StudentApp.Backend.Repository.Logic.StudentRepository.GetAll() in C:\Users\carles.sanchez\source\repos\Students-Backend\StudentApp.Backend.Repository.Logic\StudentRepository.cs:line 43
+   at StudentApp.Backend.Business.Logic.BusinessLogic.GetAll() in C:\Users\carles.sanchez\source\repos\Students-Backend\StudentApp.Backend.Business.Logic\BusinessLogic.cs:line 54
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:53,State:0,Class:20
+2018-05-09 10:27:01,159 [8] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - We are entering in class StudentApp.Backend.Repository.Logic.StudentRepository
+2018-05-09 10:27:01,160 [8] DEBUG StudentApp.Backend.Business.Logic.BusinessLogic - We are entering in class StudentApp.Backend.Business.Logic.BusinessLogic
+2018-05-09 10:27:01,167 [8] DEBUG StudentApp.Backend.Business.Facade.Controllers.StudentController - We are entering in class StudentApp.Backend.Business.Facade.Controllers.StudentController
+2018-05-09 10:27:01,396 [8] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - Obtaining student by id
+2018-05-09 10:27:34,593 [8] ERROR StudentApp.Backend.Business.Logic.BusinessLogic - An exception has been thrownSqlException
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server) ---> System.ComponentModel.Win32Exception (0x80004005): No se ha encontrado la ruta de acceso de la red
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
    at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
-   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.Execute[TState,TResult](IExecutionStrategy strategy, TState state, Func`2 operation)
-   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
-   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IReadOnlyList`1 entries)
-   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IReadOnlyList`1 entriesToSave)
-   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
-   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
-   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
-   at StudentApp.Backend.Repository.Logic.StudentRepository.Add(Student student) in C:\Users\carles.sanchez\source\repos\Students-Backend\StudentApp.Backend.Repository.Logic\StudentRepository.cs:line 31
-   at StudentApp.Backend.Business.Logic.BusinessLogic.Add(Student student) in C:\Users\carles.sanchez\source\repos\Students-Backend\StudentApp.Backend.Business.Logic\BusinessLogic.cs:line 28
-2018-05-07 17:04:13,440 [9] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - We are entering in class StudentApp.Backend.Repository.Logic.StudentRepository
-2018-05-07 17:04:13,440 [9] DEBUG StudentApp.Backend.Business.Logic.BusinessLogic - We are entering in class StudentApp.Backend.Business.Logic.BusinessLogic
-2018-05-07 17:04:13,440 [9] DEBUG StudentApp.Backend.Business.Facade.Controllers.StudentController - We are entering in class StudentApp.Backend.Business.Facade.Controllers.StudentController
-2018-05-07 17:04:13,471 [9] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - Adding a Student
-2018-05-07 17:04:13,570 [9] ERROR StudentApp.Backend.Business.Logic.BusinessLogic - An exception has been thrownObjectDisposedException
-System.ObjectDisposedException: Cannot access a disposed object. A common cause of this error is disposing a context that was resolved from dependency injection and then later trying to use the same context instance elsewhere in your application. This may occur if you are calling Dispose() on the context, or wrapping the context in a using statement. If you are using dependency injection, you should let the dependency injection container take care of disposing context instances.
-Object name: 'StudentContext'.
-   at Microsoft.EntityFrameworkCore.DbContext.CheckDisposed()
-   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityType()
-   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityQueryable()
-   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.System.Linq.IQueryable.get_Provider()
-   at System.Linq.Queryable.Where[TSource](IQueryable`1 source, Expression`1 predicate)
-   at StudentApp.Backend.Repository.Logic.StudentRepository.GetByGuid(Guid guid) in C:\Users\carles.sanchez\source\repos\Students-Backend\StudentApp.Backend.Repository.Logic\StudentRepository.cs:line 55
-   at StudentApp.Backend.Repository.Logic.StudentRepository.Add(Student student) in C:\Users\carles.sanchez\source\repos\Students-Backend\StudentApp.Backend.Repository.Logic\StudentRepository.cs:line 33
-   at StudentApp.Backend.Business.Logic.BusinessLogic.Add(Student student) in C:\Users\carles.sanchez\source\repos\Students-Backend\StudentApp.Backend.Business.Logic\BusinessLogic.cs:line 28
-2018-05-07 17:07:45,999 [11] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - We are entering in class StudentApp.Backend.Repository.Logic.StudentRepository
-2018-05-07 17:07:46,033 [11] DEBUG StudentApp.Backend.Business.Logic.BusinessLogic - We are entering in class StudentApp.Backend.Business.Logic.BusinessLogic
-2018-05-07 17:07:46,034 [11] DEBUG StudentApp.Backend.Business.Facade.Controllers.StudentController - We are entering in class StudentApp.Backend.Business.Facade.Controllers.StudentController
-2018-05-07 17:07:46,095 [11] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - Listing all Student
-2018-05-07 17:08:09,515 [9] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - We are entering in class StudentApp.Backend.Repository.Logic.StudentRepository
-2018-05-07 17:08:09,516 [9] DEBUG StudentApp.Backend.Business.Logic.BusinessLogic - We are entering in class StudentApp.Backend.Business.Logic.BusinessLogic
-2018-05-07 17:08:09,516 [9] DEBUG StudentApp.Backend.Business.Facade.Controllers.StudentController - We are entering in class StudentApp.Backend.Business.Facade.Controllers.StudentController
-2018-05-07 17:08:09,611 [9] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - Adding a Student
-2018-05-07 17:08:38,424 [8] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - We are entering in class StudentApp.Backend.Repository.Logic.StudentRepository
-2018-05-07 17:08:38,424 [8] DEBUG StudentApp.Backend.Business.Logic.BusinessLogic - We are entering in class StudentApp.Backend.Business.Logic.BusinessLogic
-2018-05-07 17:08:38,424 [8] DEBUG StudentApp.Backend.Business.Facade.Controllers.StudentController - We are entering in class StudentApp.Backend.Business.Facade.Controllers.StudentController
-2018-05-07 17:08:38,447 [8] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - Deleting student
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method(Closure , QueryContext )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass17_1`1.<CompileQueryCore>b__0(QueryContext qc)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at StudentApp.Backend.Repository.Logic.StudentRepository.GetById(Int32 id) in C:\Users\carles.sanchez\source\repos\Students-Backend\StudentApp.Backend.Repository.Logic\StudentRepository.cs:line 63
+   at StudentApp.Backend.Business.Logic.BusinessLogic.GetById(Int32 id) in C:\Users\carles.sanchez\source\repos\Students-Backend\StudentApp.Backend.Business.Logic\BusinessLogic.cs:line 81
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:53,State:0,Class:20
+2018-05-09 10:28:23,595 [8] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - We are entering in class StudentApp.Backend.Repository.Logic.StudentRepository
+2018-05-09 10:28:23,595 [8] DEBUG StudentApp.Backend.Business.Logic.BusinessLogic - We are entering in class StudentApp.Backend.Business.Logic.BusinessLogic
+2018-05-09 10:28:23,595 [8] DEBUG StudentApp.Backend.Business.Facade.Controllers.StudentController - We are entering in class StudentApp.Backend.Business.Facade.Controllers.StudentController
+2018-05-09 10:28:23,689 [8] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - Obtaining student by id
+2018-05-09 10:28:56,513 [8] ERROR StudentApp.Backend.Business.Logic.BusinessLogic - An exception has been thrownSqlException
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server) ---> System.ComponentModel.Win32Exception (0x80004005): No se ha encontrado la ruta de acceso de la red
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method(Closure , QueryContext )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass17_1`1.<CompileQueryCore>b__0(QueryContext qc)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
+   at StudentApp.Backend.Repository.Logic.StudentRepository.GetById(Int32 id) in C:\Users\carles.sanchez\source\repos\Students-Backend\StudentApp.Backend.Repository.Logic\StudentRepository.cs:line 63
+   at StudentApp.Backend.Business.Logic.BusinessLogic.GetById(Int32 id) in C:\Users\carles.sanchez\source\repos\Students-Backend\StudentApp.Backend.Business.Logic\BusinessLogic.cs:line 81
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:53,State:0,Class:20
+2018-05-09 10:36:04,362 [8] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - We are entering in class StudentApp.Backend.Repository.Logic.StudentRepository
+2018-05-09 10:36:04,362 [8] DEBUG StudentApp.Backend.Business.Logic.BusinessLogic - We are entering in class StudentApp.Backend.Business.Logic.BusinessLogic
+2018-05-09 10:36:04,362 [8] DEBUG StudentApp.Backend.Business.Facade.Controllers.StudentController - We are entering in class StudentApp.Backend.Business.Facade.Controllers.StudentController
+2018-05-09 10:36:04,472 [8] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - Obtaining student by id
+2018-05-09 10:42:02,749 [8] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - We are entering in class StudentApp.Backend.Repository.Logic.StudentRepository
+2018-05-09 10:42:02,749 [8] DEBUG StudentApp.Backend.Business.Logic.BusinessLogic - We are entering in class StudentApp.Backend.Business.Logic.BusinessLogic
+2018-05-09 10:42:02,749 [8] DEBUG StudentApp.Backend.Business.Facade.Controllers.StudentController - We are entering in class StudentApp.Backend.Business.Facade.Controllers.StudentController
+2018-05-09 10:42:02,848 [8] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - Obtaining student by id

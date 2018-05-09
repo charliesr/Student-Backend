@@ -25,7 +25,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StudentApp.Backend.Business
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{6AA27AE0-B311-4D25-AAD5-CB90F22BA6E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFrameworkTest", "EntityFrameworkTest\EntityFrameworkTest.csproj", "{2140AA06-9D68-49FC-8621-C51A112349A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityFrameworkTest", "EntityFrameworkTest\EntityFrameworkTest.csproj", "{2140AA06-9D68-49FC-8621-C51A112349A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Students.Backend.Selenium", "Students.Backend.Selenium\Students.Backend.Selenium.csproj", "{82A07562-92B0-4404-AA62-F91F9F634667}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -65,6 +67,10 @@ Global
 		{2140AA06-9D68-49FC-8621-C51A112349A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2140AA06-9D68-49FC-8621-C51A112349A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2140AA06-9D68-49FC-8621-C51A112349A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82A07562-92B0-4404-AA62-F91F9F634667}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82A07562-92B0-4404-AA62-F91F9F634667}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82A07562-92B0-4404-AA62-F91F9F634667}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82A07562-92B0-4404-AA62-F91F9F634667}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -78,6 +84,7 @@ Global
 		{D2C0BCF1-5805-4251-94A7-EFE45F82CA6D} = {17929900-30F6-49FA-8C9A-123F605F900B}
 		{7D9F543A-A24C-438E-9B36-302A10C9ACC6} = {17929900-30F6-49FA-8C9A-123F605F900B}
 		{2140AA06-9D68-49FC-8621-C51A112349A8} = {6AA27AE0-B311-4D25-AAD5-CB90F22BA6E5}
+		{82A07562-92B0-4404-AA62-F91F9F634667} = {6AA27AE0-B311-4D25-AAD5-CB90F22BA6E5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F56C578D-F426-46FF-8611-37684DA8B657}
