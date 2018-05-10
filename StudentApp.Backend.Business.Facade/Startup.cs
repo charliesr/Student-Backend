@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -35,8 +36,16 @@ namespace StudentApp.Backend.Business.Facade
             services.AddTransient<IMyLog, Log4NetLogger>();
             services.AddTransient<IStudentRepository, StudentRepository>();
             services.AddTransient<IBusinessLogic, BusinessLogic>();
-            services.AddMvc();
+            services.AddMvc(options =>
+           {
+               options.FormatterMappings.SetMediaTypeMappingForFormat
+               ("xml", Microsoft.Net.Http.Headers.MediaTypeHeaderValue.Parse("application/xml"));
+               options.FormatterMappings.SetMediaTypeMappingForFormat
+               ("js", Microsoft.Net.Http.Headers.MediaTypeHeaderValue.Parse("application/json"));
+           }).AddXmlSerializerFormatters();
+
         }
+
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)

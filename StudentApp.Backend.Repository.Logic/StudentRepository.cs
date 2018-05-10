@@ -1,4 +1,5 @@
 ﻿
+using Microsoft.EntityFrameworkCore;
 using StudentApp.Backend.Common.Logic;
 using StudentApp.Backend.Common.Logic.Contracts;
 using StudentApp.Backend.Repository.Logic.Contracts;
@@ -94,6 +95,11 @@ namespace StudentApp.Backend.Repository.Logic
                 context.Students.Remove(studentToDelete);
                 context.SaveChanges();
             }
+        }
+
+        public void DeleteAll()
+        {
+            this.studentContext.Database.ExecuteSqlCommand("TRUNCATE TABLE [Alumnos]");
         }
     }
 }

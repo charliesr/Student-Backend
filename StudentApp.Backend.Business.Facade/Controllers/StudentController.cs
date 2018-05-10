@@ -10,7 +10,7 @@ using StudentApp.Backend.Common.Logic.Contracts;
 
 namespace StudentApp.Backend.Business.Facade.Controllers
 {
-    [Route("api/[controller]")]
+    
     public class StudentController : Controller
     {
         private readonly IBusinessLogic businessLogic;
@@ -24,10 +24,10 @@ namespace StudentApp.Backend.Business.Facade.Controllers
         }
 
         // GET api/Student
-        [HttpGet]
+        [HttpGet("api/[controller]"),FormatFilter]
         public IActionResult GetAll()
         {
-            return Ok(businessLogic.GetAll());
+           return Ok(businessLogic.GetAll());
         }
 
         // GET api/Student/5

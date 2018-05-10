@@ -1,8 +1,8 @@
-2018-05-09 10:22:31,475 [8] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - We are entering in class StudentApp.Backend.Repository.Logic.StudentRepository
-2018-05-09 10:22:31,505 [8] DEBUG StudentApp.Backend.Business.Logic.BusinessLogic - We are entering in class StudentApp.Backend.Business.Logic.BusinessLogic
-2018-05-09 10:22:31,506 [8] DEBUG StudentApp.Backend.Business.Facade.Controllers.StudentController - We are entering in class StudentApp.Backend.Business.Facade.Controllers.StudentController
-2018-05-09 10:22:31,554 [8] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - Listing all Student
-2018-05-09 10:23:25,755 [8] ERROR StudentApp.Backend.Business.Logic.BusinessLogic - An exception has been thrownSqlException
+2018-05-10 09:22:17,971 [8] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - We are entering in class StudentApp.Backend.Repository.Logic.StudentRepository
+2018-05-10 09:22:18,014 [8] DEBUG StudentApp.Backend.Business.Logic.BusinessLogic - We are entering in class StudentApp.Backend.Business.Logic.BusinessLogic
+2018-05-10 09:22:18,015 [8] DEBUG StudentApp.Backend.Business.Facade.Controllers.StudentController - We are entering in class StudentApp.Backend.Business.Facade.Controllers.StudentController
+2018-05-10 09:22:18,069 [8] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - Listing all Student
+2018-05-10 09:22:36,498 [8] ERROR StudentApp.Backend.Business.Logic.BusinessLogic - An exception has been thrownSqlException
 System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server) ---> System.ComponentModel.Win32Exception (0x80004005): No se ha encontrado la ruta de acceso de la red
    at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling)
    at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
@@ -28,11 +28,11 @@ System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-s
    at StudentApp.Backend.Business.Logic.BusinessLogic.GetAll() in C:\Users\carles.sanchez\source\repos\Students-Backend\StudentApp.Backend.Business.Logic\BusinessLogic.cs:line 54
 ClientConnectionId:00000000-0000-0000-0000-000000000000
 Error Number:53,State:0,Class:20
-2018-05-09 10:27:01,159 [8] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - We are entering in class StudentApp.Backend.Repository.Logic.StudentRepository
-2018-05-09 10:27:01,160 [8] DEBUG StudentApp.Backend.Business.Logic.BusinessLogic - We are entering in class StudentApp.Backend.Business.Logic.BusinessLogic
-2018-05-09 10:27:01,167 [8] DEBUG StudentApp.Backend.Business.Facade.Controllers.StudentController - We are entering in class StudentApp.Backend.Business.Facade.Controllers.StudentController
-2018-05-09 10:27:01,396 [8] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - Obtaining student by id
-2018-05-09 10:27:34,593 [8] ERROR StudentApp.Backend.Business.Logic.BusinessLogic - An exception has been thrownSqlException
+2018-05-10 09:43:21,501 [8] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - We are entering in class StudentApp.Backend.Repository.Logic.StudentRepository
+2018-05-10 09:43:21,501 [8] DEBUG StudentApp.Backend.Business.Logic.BusinessLogic - We are entering in class StudentApp.Backend.Business.Logic.BusinessLogic
+2018-05-10 09:43:21,502 [8] DEBUG StudentApp.Backend.Business.Facade.Controllers.StudentController - We are entering in class StudentApp.Backend.Business.Facade.Controllers.StudentController
+2018-05-10 09:43:21,554 [8] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - Listing all Student
+2018-05-10 09:43:37,692 [8] ERROR StudentApp.Backend.Business.Logic.BusinessLogic - An exception has been thrownSqlException
 System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server) ---> System.ComponentModel.Win32Exception (0x80004005): No se ha encontrado la ruta de acceso de la red
    at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling)
    at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
@@ -50,23 +50,19 @@ System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-s
    at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
    at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
    at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
-   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
-   at lambda_method(Closure , QueryContext )
-   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass17_1`1.<CompileQueryCore>b__0(QueryContext qc)
-   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
-   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
-   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
-   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
-   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
-   at StudentApp.Backend.Repository.Logic.StudentRepository.GetById(Int32 id) in C:\Users\carles.sanchez\source\repos\Students-Backend\StudentApp.Backend.Repository.Logic\StudentRepository.cs:line 63
-   at StudentApp.Backend.Business.Logic.BusinessLogic.GetById(Int32 id) in C:\Users\carles.sanchez\source\repos\Students-Backend\StudentApp.Backend.Business.Logic\BusinessLogic.cs:line 81
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.<_TrackEntities>d__17`2.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at StudentApp.Backend.Repository.Logic.StudentRepository.GetAll() in C:\Users\carles.sanchez\source\repos\Students-Backend\StudentApp.Backend.Repository.Logic\StudentRepository.cs:line 43
+   at StudentApp.Backend.Business.Logic.BusinessLogic.GetAll() in C:\Users\carles.sanchez\source\repos\Students-Backend\StudentApp.Backend.Business.Logic\BusinessLogic.cs:line 54
 ClientConnectionId:00000000-0000-0000-0000-000000000000
 Error Number:53,State:0,Class:20
-2018-05-09 10:28:23,595 [8] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - We are entering in class StudentApp.Backend.Repository.Logic.StudentRepository
-2018-05-09 10:28:23,595 [8] DEBUG StudentApp.Backend.Business.Logic.BusinessLogic - We are entering in class StudentApp.Backend.Business.Logic.BusinessLogic
-2018-05-09 10:28:23,595 [8] DEBUG StudentApp.Backend.Business.Facade.Controllers.StudentController - We are entering in class StudentApp.Backend.Business.Facade.Controllers.StudentController
-2018-05-09 10:28:23,689 [8] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - Obtaining student by id
-2018-05-09 10:28:56,513 [8] ERROR StudentApp.Backend.Business.Logic.BusinessLogic - An exception has been thrownSqlException
+2018-05-10 09:43:42,935 [8] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - We are entering in class StudentApp.Backend.Repository.Logic.StudentRepository
+2018-05-10 09:43:42,935 [8] DEBUG StudentApp.Backend.Business.Logic.BusinessLogic - We are entering in class StudentApp.Backend.Business.Logic.BusinessLogic
+2018-05-10 09:43:42,935 [8] DEBUG StudentApp.Backend.Business.Facade.Controllers.StudentController - We are entering in class StudentApp.Backend.Business.Facade.Controllers.StudentController
+2018-05-10 09:43:42,963 [8] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - Listing all Student
+2018-05-10 09:43:58,684 [8] ERROR StudentApp.Backend.Business.Logic.BusinessLogic - An exception has been thrownSqlException
 System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server) ---> System.ComponentModel.Win32Exception (0x80004005): No se ha encontrado la ruta de acceso de la red
    at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling)
    at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
@@ -84,23 +80,184 @@ System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-s
    at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
    at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
    at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
-   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
-   at lambda_method(Closure , QueryContext )
-   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass17_1`1.<CompileQueryCore>b__0(QueryContext qc)
-   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
-   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
-   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
-   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
-   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Find(Object[] keyValues)
-   at StudentApp.Backend.Repository.Logic.StudentRepository.GetById(Int32 id) in C:\Users\carles.sanchez\source\repos\Students-Backend\StudentApp.Backend.Repository.Logic\StudentRepository.cs:line 63
-   at StudentApp.Backend.Business.Logic.BusinessLogic.GetById(Int32 id) in C:\Users\carles.sanchez\source\repos\Students-Backend\StudentApp.Backend.Business.Logic\BusinessLogic.cs:line 81
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.<_TrackEntities>d__17`2.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at StudentApp.Backend.Repository.Logic.StudentRepository.GetAll() in C:\Users\carles.sanchez\source\repos\Students-Backend\StudentApp.Backend.Repository.Logic\StudentRepository.cs:line 43
+   at StudentApp.Backend.Business.Logic.BusinessLogic.GetAll() in C:\Users\carles.sanchez\source\repos\Students-Backend\StudentApp.Backend.Business.Logic\BusinessLogic.cs:line 54
 ClientConnectionId:00000000-0000-0000-0000-000000000000
 Error Number:53,State:0,Class:20
-2018-05-09 10:36:04,362 [8] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - We are entering in class StudentApp.Backend.Repository.Logic.StudentRepository
-2018-05-09 10:36:04,362 [8] DEBUG StudentApp.Backend.Business.Logic.BusinessLogic - We are entering in class StudentApp.Backend.Business.Logic.BusinessLogic
-2018-05-09 10:36:04,362 [8] DEBUG StudentApp.Backend.Business.Facade.Controllers.StudentController - We are entering in class StudentApp.Backend.Business.Facade.Controllers.StudentController
-2018-05-09 10:36:04,472 [8] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - Obtaining student by id
-2018-05-09 10:42:02,749 [8] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - We are entering in class StudentApp.Backend.Repository.Logic.StudentRepository
-2018-05-09 10:42:02,749 [8] DEBUG StudentApp.Backend.Business.Logic.BusinessLogic - We are entering in class StudentApp.Backend.Business.Logic.BusinessLogic
-2018-05-09 10:42:02,749 [8] DEBUG StudentApp.Backend.Business.Facade.Controllers.StudentController - We are entering in class StudentApp.Backend.Business.Facade.Controllers.StudentController
-2018-05-09 10:42:02,848 [8] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - Obtaining student by id
+2018-05-10 09:43:59,008 [23] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - We are entering in class StudentApp.Backend.Repository.Logic.StudentRepository
+2018-05-10 09:43:59,008 [23] DEBUG StudentApp.Backend.Business.Logic.BusinessLogic - We are entering in class StudentApp.Backend.Business.Logic.BusinessLogic
+2018-05-10 09:43:59,008 [23] DEBUG StudentApp.Backend.Business.Facade.Controllers.StudentController - We are entering in class StudentApp.Backend.Business.Facade.Controllers.StudentController
+2018-05-10 09:43:59,043 [23] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - Listing all Student
+2018-05-10 09:44:15,143 [23] ERROR StudentApp.Backend.Business.Logic.BusinessLogic - An exception has been thrownSqlException
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server) ---> System.ComponentModel.Win32Exception (0x80004005): No se ha encontrado la ruta de acceso de la red
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.<_TrackEntities>d__17`2.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at StudentApp.Backend.Repository.Logic.StudentRepository.GetAll() in C:\Users\carles.sanchez\source\repos\Students-Backend\StudentApp.Backend.Repository.Logic\StudentRepository.cs:line 43
+   at StudentApp.Backend.Business.Logic.BusinessLogic.GetAll() in C:\Users\carles.sanchez\source\repos\Students-Backend\StudentApp.Backend.Business.Logic\BusinessLogic.cs:line 54
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:53,State:0,Class:20
+2018-05-10 09:44:22,104 [8] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - We are entering in class StudentApp.Backend.Repository.Logic.StudentRepository
+2018-05-10 09:44:22,104 [8] DEBUG StudentApp.Backend.Business.Logic.BusinessLogic - We are entering in class StudentApp.Backend.Business.Logic.BusinessLogic
+2018-05-10 09:44:22,104 [8] DEBUG StudentApp.Backend.Business.Facade.Controllers.StudentController - We are entering in class StudentApp.Backend.Business.Facade.Controllers.StudentController
+2018-05-10 09:44:22,128 [8] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - Listing all Student
+2018-05-10 09:44:37,823 [8] ERROR StudentApp.Backend.Business.Logic.BusinessLogic - An exception has been thrownSqlException
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server) ---> System.ComponentModel.Win32Exception (0x80004005): No se ha encontrado la ruta de acceso de la red
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.<_TrackEntities>d__17`2.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at StudentApp.Backend.Repository.Logic.StudentRepository.GetAll() in C:\Users\carles.sanchez\source\repos\Students-Backend\StudentApp.Backend.Repository.Logic\StudentRepository.cs:line 43
+   at StudentApp.Backend.Business.Logic.BusinessLogic.GetAll() in C:\Users\carles.sanchez\source\repos\Students-Backend\StudentApp.Backend.Business.Logic\BusinessLogic.cs:line 54
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:53,State:0,Class:20
+2018-05-10 09:44:42,880 [8] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - We are entering in class StudentApp.Backend.Repository.Logic.StudentRepository
+2018-05-10 09:44:42,880 [8] DEBUG StudentApp.Backend.Business.Logic.BusinessLogic - We are entering in class StudentApp.Backend.Business.Logic.BusinessLogic
+2018-05-10 09:44:42,880 [8] DEBUG StudentApp.Backend.Business.Facade.Controllers.StudentController - We are entering in class StudentApp.Backend.Business.Facade.Controllers.StudentController
+2018-05-10 09:44:42,905 [8] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - Listing all Student
+2018-05-10 09:44:43,277 [8] ERROR StudentApp.Backend.Business.Logic.BusinessLogic - An exception has been thrownSqlException
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server) ---> System.ComponentModel.Win32Exception (0x80004005): No se ha encontrado la ruta de acceso de la red
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.<_TrackEntities>d__17`2.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at StudentApp.Backend.Repository.Logic.StudentRepository.GetAll() in C:\Users\carles.sanchez\source\repos\Students-Backend\StudentApp.Backend.Repository.Logic\StudentRepository.cs:line 43
+   at StudentApp.Backend.Business.Logic.BusinessLogic.GetAll() in C:\Users\carles.sanchez\source\repos\Students-Backend\StudentApp.Backend.Business.Logic\BusinessLogic.cs:line 54
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:53,State:0,Class:20
+2018-05-10 09:45:01,448 [23] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - We are entering in class StudentApp.Backend.Repository.Logic.StudentRepository
+2018-05-10 09:45:01,448 [23] DEBUG StudentApp.Backend.Business.Logic.BusinessLogic - We are entering in class StudentApp.Backend.Business.Logic.BusinessLogic
+2018-05-10 09:45:01,448 [23] DEBUG StudentApp.Backend.Business.Facade.Controllers.StudentController - We are entering in class StudentApp.Backend.Business.Facade.Controllers.StudentController
+2018-05-10 09:45:01,478 [23] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - Listing all Student
+2018-05-10 09:45:17,529 [23] ERROR StudentApp.Backend.Business.Logic.BusinessLogic - An exception has been thrownSqlException
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server) ---> System.ComponentModel.Win32Exception (0x80004005): No se ha encontrado la ruta de acceso de la red
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.<_TrackEntities>d__17`2.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at StudentApp.Backend.Repository.Logic.StudentRepository.GetAll() in C:\Users\carles.sanchez\source\repos\Students-Backend\StudentApp.Backend.Repository.Logic\StudentRepository.cs:line 43
+   at StudentApp.Backend.Business.Logic.BusinessLogic.GetAll() in C:\Users\carles.sanchez\source\repos\Students-Backend\StudentApp.Backend.Business.Logic\BusinessLogic.cs:line 54
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:53,State:0,Class:20
+2018-05-10 11:45:21,661 [8] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - We are entering in class StudentApp.Backend.Repository.Logic.StudentRepository
+2018-05-10 11:45:21,689 [8] DEBUG StudentApp.Backend.Business.Logic.BusinessLogic - We are entering in class StudentApp.Backend.Business.Logic.BusinessLogic
+2018-05-10 11:45:21,690 [8] DEBUG StudentApp.Backend.Business.Facade.Controllers.StudentController - We are entering in class StudentApp.Backend.Business.Facade.Controllers.StudentController
+2018-05-10 11:45:21,735 [8] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - Listing all Student
+2018-05-10 11:45:38,452 [8] ERROR StudentApp.Backend.Business.Logic.BusinessLogic - An exception has been thrownSqlException
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server) ---> System.ComponentModel.Win32Exception (0x80004005): No se ha encontrado la ruta de acceso de la red
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, Object providerInfo, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.<_TrackEntities>d__17`2.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at StudentApp.Backend.Repository.Logic.StudentRepository.GetAll() in C:\Users\carles.sanchez\source\repos\Students-Backend\StudentApp.Backend.Repository.Logic\StudentRepository.cs:line 44
+   at StudentApp.Backend.Business.Logic.BusinessLogic.GetAll() in C:\Users\carles.sanchez\source\repos\Students-Backend\StudentApp.Backend.Business.Logic\BusinessLogic.cs:line 54
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:53,State:0,Class:20
+2018-05-10 11:46:23,028 [8] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - We are entering in class StudentApp.Backend.Repository.Logic.StudentRepository
+2018-05-10 11:46:23,028 [8] DEBUG StudentApp.Backend.Business.Logic.BusinessLogic - We are entering in class StudentApp.Backend.Business.Logic.BusinessLogic
+2018-05-10 11:46:23,029 [8] DEBUG StudentApp.Backend.Business.Facade.Controllers.StudentController - We are entering in class StudentApp.Backend.Business.Facade.Controllers.StudentController
+2018-05-10 11:46:23,065 [8] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - Listing all Student
+2018-05-10 11:47:06,542 [8] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - We are entering in class StudentApp.Backend.Repository.Logic.StudentRepository
+2018-05-10 11:47:06,542 [8] DEBUG StudentApp.Backend.Business.Logic.BusinessLogic - We are entering in class StudentApp.Backend.Business.Logic.BusinessLogic
+2018-05-10 11:47:06,542 [8] DEBUG StudentApp.Backend.Business.Facade.Controllers.StudentController - We are entering in class StudentApp.Backend.Business.Facade.Controllers.StudentController
+2018-05-10 11:47:06,574 [8] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - Listing all Student
+2018-05-10 11:47:47,734 [8] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - We are entering in class StudentApp.Backend.Repository.Logic.StudentRepository
+2018-05-10 11:47:47,734 [8] DEBUG StudentApp.Backend.Business.Logic.BusinessLogic - We are entering in class StudentApp.Backend.Business.Logic.BusinessLogic
+2018-05-10 11:47:47,734 [8] DEBUG StudentApp.Backend.Business.Facade.Controllers.StudentController - We are entering in class StudentApp.Backend.Business.Facade.Controllers.StudentController
+2018-05-10 11:47:47,762 [8] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - Listing all Student
+2018-05-10 11:48:22,524 [9] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - We are entering in class StudentApp.Backend.Repository.Logic.StudentRepository
+2018-05-10 11:48:22,524 [9] DEBUG StudentApp.Backend.Business.Logic.BusinessLogic - We are entering in class StudentApp.Backend.Business.Logic.BusinessLogic
+2018-05-10 11:48:22,524 [9] DEBUG StudentApp.Backend.Business.Facade.Controllers.StudentController - We are entering in class StudentApp.Backend.Business.Facade.Controllers.StudentController
+2018-05-10 11:48:22,555 [9] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - Listing all Student
+2018-05-10 12:32:19,708 [8] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - We are entering in class StudentApp.Backend.Repository.Logic.StudentRepository
+2018-05-10 12:32:19,740 [8] DEBUG StudentApp.Backend.Business.Logic.BusinessLogic - We are entering in class StudentApp.Backend.Business.Logic.BusinessLogic
+2018-05-10 12:32:19,740 [8] DEBUG StudentApp.Backend.Business.Facade.Controllers.StudentController - We are entering in class StudentApp.Backend.Business.Facade.Controllers.StudentController
+2018-05-10 12:32:49,209 [8] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - Listing all Student
+2018-05-10 12:32:55,617 [11] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - We are entering in class StudentApp.Backend.Repository.Logic.StudentRepository
+2018-05-10 12:32:55,645 [11] DEBUG StudentApp.Backend.Business.Logic.BusinessLogic - We are entering in class StudentApp.Backend.Business.Logic.BusinessLogic
+2018-05-10 12:32:55,645 [11] DEBUG StudentApp.Backend.Business.Facade.Controllers.StudentController - We are entering in class StudentApp.Backend.Business.Facade.Controllers.StudentController
+2018-05-10 12:33:11,183 [11] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - Listing all Student
+2018-05-10 12:33:15,600 [3] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - We are entering in class StudentApp.Backend.Repository.Logic.StudentRepository
+2018-05-10 12:33:15,600 [3] DEBUG StudentApp.Backend.Business.Logic.BusinessLogic - We are entering in class StudentApp.Backend.Business.Logic.BusinessLogic
+2018-05-10 12:33:15,601 [3] DEBUG StudentApp.Backend.Business.Facade.Controllers.StudentController - We are entering in class StudentApp.Backend.Business.Facade.Controllers.StudentController
+2018-05-10 12:33:15,639 [3] DEBUG StudentApp.Backend.Repository.Logic.StudentRepository - Listing all Student

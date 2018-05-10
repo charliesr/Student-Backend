@@ -13,5 +13,6 @@ namespace StudentApp.Backend.Repository.Logic.Contracts
         List<Student> GetAll();
         Student Update(Student student);
         void Delete(int id);
+        void DeleteAll();
     }
 }
